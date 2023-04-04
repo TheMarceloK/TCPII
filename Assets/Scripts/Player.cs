@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Bullets = 6;
+            Bullets = defaultBullets;
         }
         if (Input.GetKeyDown(crouchkey))
         {

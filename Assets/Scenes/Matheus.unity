@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   Bullets: 6
   defaultBullets: 0
   currentLife: 50
-  textTrade: {fileID: 0}
+  textTrade: {fileID: 71044817}
   bullet: {fileID: 7346288100154261617, guid: 6fdc6835d1c665341867c02831aa7438, type: 3}
   bulletSpawnPlace: {fileID: 1459965790}
   state: 0
