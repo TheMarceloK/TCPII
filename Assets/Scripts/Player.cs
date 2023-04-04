@@ -15,6 +15,11 @@ public class Player : MonoBehaviour
     public KeyCode crouchkey = KeyCode.LeftControl;
 
     public int Bullets = 6;
+    public int defaultBullets;
+    public float currentLife = 50;
+
+    [SerializeField]
+    private GameObject textTrade;
 
     [SerializeField]
     private GameObject bullet;
@@ -25,6 +30,7 @@ public class Player : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         startYScale= transform.localScale.y;
+        defaultBullets = Bullets;
     }
 
     private void Update()
@@ -88,6 +94,32 @@ public class Player : MonoBehaviour
             state = MovementState.crounching;
             speed = crouchspeed;
         }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        textTrade.SetActive(true);
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (other.gameObject.tag == "Heal")
+            {
+                currentLife += 50;
+                Destroy(other.gameObject);
+                textTrade.SetActive(false);
+            }
+            if (other.gameObject.tag == "Gun2")
+            {
+                Bullets = 30;
+                defaultBullets = Bullets;
+                Destroy(other.gameObject);
+                textTrade.SetActive(false);
+                //Trocar arma por aqui
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        textTrade.SetActive(false);
     }
 }
 /*control agacha e faz se mover mais devagar

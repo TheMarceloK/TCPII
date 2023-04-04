@@ -9,14 +9,17 @@ public class ControlUICanvas : MonoBehaviour
     private Text text;
     public GameObject textWarning;
     private Player player;
+    [SerializeField]
+    private Slider life;
     void Start()
     {
         player = FindObjectOfType<Player>();
+        life.maxValue = 100;
     }
 
     void Update()
     {
-        text.text = player.Bullets + "/6";
+        text.text = player.Bullets + "/" + player.defaultBullets;
 
         if(player.Bullets == 0)
         {
@@ -26,5 +29,7 @@ public class ControlUICanvas : MonoBehaviour
         {
             textWarning.SetActive(false);
         }
+
+        life.value = player.currentLife;
     }
 }
