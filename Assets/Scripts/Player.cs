@@ -7,9 +7,12 @@ public class Player : MonoBehaviour
     private Rigidbody rigidbody;
     private Vector3 movement;
     [SerializeField]
-    private float walkspeed, runningspeed,crouchspeed, crouchYScale;
+    private float walkspeed, runningspeed, crouchspeed, crouchYScale;
     private float startYScale;
     private float speed;
+
+    [SerializeField]
+    private List<GameObject> gun;
 
     public KeyCode runningkey = KeyCode.LeftShift;
     public KeyCode crouchkey = KeyCode.LeftControl;
@@ -114,7 +117,13 @@ public class Player : MonoBehaviour
                 defaultBullets = Bullets;
                 Destroy(other.gameObject);
                 textTrade.SetActive(false);
-                //Trocar arma por aqui
+                //Trocar arma por aqui. 
+                //tá escrito porcamente, tem que melhorar isso, mas está "funcionando"
+                if (gun[0].active == true) { gun[0].SetActive(false); gun[1].SetActive(true); }
+                else if (gun[1].active == true) { gun[1].SetActive(false); gun[0].SetActive(true); }
+              
+
+
             }
         }
     }
