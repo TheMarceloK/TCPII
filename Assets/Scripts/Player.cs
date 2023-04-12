@@ -39,13 +39,15 @@ public class Player : MonoBehaviour
         float eixoZ = Input.GetAxis("Vertical");
 
         movement = transform.TransformVector(new Vector3(eixoX, 0, eixoZ));
-
-        if(Bullets > 0)
+        if(Time.timeScale == 1)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if(Bullets > 0)
             {
-                Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
-                Bullets--;
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
+                    Bullets--;
+                }
             }
         }
        

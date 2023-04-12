@@ -11,6 +11,8 @@ public class ControlUICanvas : MonoBehaviour
     private Player player;
     [SerializeField]
     private Slider life;
+    [SerializeField]
+    private GameObject UIPause, UIOptions, UIButtons;    
     void Start()
     {
         player = FindObjectOfType<Player>();
@@ -31,5 +33,33 @@ public class ControlUICanvas : MonoBehaviour
         }
 
         life.value = player.currentLife;
+
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            UIPause.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
+    public void ReturnGame()
+    {
+        Time.timeScale = 1;
+        UIPause.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+    public void Options()
+    {
+        UIOptions.SetActive(true);
+        UIButtons.SetActive(false);
+    }
+    public void ReturnMenu()
+    {
+        UIOptions.SetActive(false);
+        UIButtons.SetActive(true);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

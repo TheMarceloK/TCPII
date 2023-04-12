@@ -13,20 +13,28 @@ public class CameraController : MonoBehaviour
     bool CursorLock = true;
     void Start()
     {
-        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
+        if(Time.timeScale == 1)
+        {
+            float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+            cameraRotationVertical -= inputY;
+            cameraRotationVertical = Mathf.Clamp(cameraRotationVertical, -45f, 45f);
+            transform.localEulerAngles = Vector3.right * cameraRotationVertical;
 
-        cameraRotationVertical -= inputY;
-        cameraRotationVertical = Mathf.Clamp(cameraRotationVertical, -45f, 45f);
-        transform.localEulerAngles = Vector3.right * cameraRotationVertical;
+            player.Rotate(Vector3.up * inputX);
+        }
 
-        player.Rotate(Vector3.up * inputX);
+        if (Time.timeScale == 0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }

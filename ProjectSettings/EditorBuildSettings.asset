@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Matheus.unity
+    guid: c697f9600ad7d4e44881d9bc789ef1de
   m_configObjects: {}
