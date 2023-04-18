@@ -14,11 +14,11 @@ public class BulletScript : MonoBehaviour {
 	public GameObject bloodEffect;
 	[Tooltip("Put Weapon layer and Player layer to ignore bullet raycast.")]
 	public LayerMask ignoreLayer;
-	private EnemyAiTutorial enemy;
+	private EnemyAi enemy;
 
     private void Start()
     {
-		enemy = GameObject.FindObjectOfType<EnemyAiTutorial>();
+		enemy = GameObject.FindObjectOfType<EnemyAi>();
     }
 
     /*

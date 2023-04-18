@@ -10,11 +10,11 @@ public class ControlBullet : MonoBehaviour
 	public float floatInfrontOfWall;
 	public GameObject bloodEffect;
 	public LayerMask ignoreLayer;
-	private EnemyAiTutorial enemy;
+	private EnemyAi enemy;
 
 	private void Start()
     {
-		enemy = GameObject.FindObjectOfType<EnemyAiTutorial>();
+		enemy = GameObject.FindObjectOfType<EnemyAi>();
 	}
     void Update()
     {
