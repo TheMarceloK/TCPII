@@ -10,7 +10,13 @@ public class ControlBullet : MonoBehaviour
 	public float floatInfrontOfWall;
 	public GameObject bloodEffect;
 	public LayerMask ignoreLayer;
-	void Update()
+	private EnemyAiTutorial enemy;
+
+	private void Start()
+    {
+		enemy = GameObject.FindObjectOfType<EnemyAiTutorial>();
+	}
+    void Update()
     {
 		if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance, ~ignoreLayer))
 		{
@@ -18,6 +24,7 @@ public class ControlBullet : MonoBehaviour
 			{
 				Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 				Destroy(gameObject);
+				enemy.TakeDamage(1);
 			}
 			Destroy(gameObject);
 		}

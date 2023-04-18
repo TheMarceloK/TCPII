@@ -102,7 +102,10 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        textTrade.SetActive(true);
+        if (other.gameObject.name == "Life" || other.gameObject.name == "Gun")
+        {
+            textTrade.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (other.gameObject.tag == "Heal")
@@ -130,7 +133,20 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        textTrade.SetActive(false);
+        if (other.gameObject.name == "Life" || other.gameObject.name == "Gun")
+        {
+            textTrade.SetActive(false);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentLife -= damage;
+
+        if (currentLife <= 0)
+        {
+            Time.timeScale = 0;
+        }
     }
 }
 /*control agacha e faz se mover mais devagar
