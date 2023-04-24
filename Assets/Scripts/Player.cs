@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "Life" || other.gameObject.name == "Gun")
+        if (other.gameObject.tag == "Heal" || other.gameObject.tag == "Gun" || other.gameObject.tag == "Ammo")
         {
             textTrade.SetActive(true);
         }
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
                 Destroy(other.gameObject);
                 textTrade.SetActive(false);
             }
-            if (other.gameObject.tag == "Gun2")
+            if (other.gameObject.tag == "Gun")
             {
                 Bullets = 30;
                 defaultBullets = Bullets;
@@ -124,16 +124,20 @@ public class Player : MonoBehaviour
                 //tá escrito porcamente, tem que melhorar isso, mas está "funcionando"
                 if (gun[0].active == true) { gun[0].SetActive(false); gun[1].SetActive(true); }
                 else if (gun[1].active == true) { gun[1].SetActive(false); gun[0].SetActive(true); }
-              
-
-
             }
+            if (other.gameObject.tag == "Ammo")
+            {
+                
+                Destroy(other.gameObject);
+                textTrade.SetActive(false);
+            }
+
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "Life" || other.gameObject.name == "Gun")
+        if (other.gameObject.tag == "Heal" || other.gameObject.tag == "Gun" || other.gameObject.tag == "Ammo")
         {
             textTrade.SetActive(false);
         }
@@ -149,6 +153,3 @@ public class Player : MonoBehaviour
         }
     }
 }
-/*control agacha e faz se mover mais devagar
- shift faz correr
- */

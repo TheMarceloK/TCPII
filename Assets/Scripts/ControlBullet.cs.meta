@@ -3,7 +3,9 @@ guid: a85de0531bccbfb4ca8deeba13addc82
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - decalHitWall: {fileID: 199458, guid: 4aa4c63f0f9d6a84dbaeed6b9caeca80, type: 3}
+  - bloodEffect: {fileID: 1013274939826982, guid: ffbf169ab9dcfdc45ae14010bc82a6b2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

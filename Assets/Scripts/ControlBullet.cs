@@ -26,7 +26,12 @@ public class ControlBullet : MonoBehaviour
 				Destroy(gameObject);
 				enemy.TakeDamage(1);
 			}
-			Destroy(gameObject);
+            if (hit.transform.tag == "LevelPart")
+            {
+                Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
+                Destroy(gameObject);
+            }
+            Destroy(gameObject);
 		}
 		Destroy(gameObject, 0.1f);
 	}
