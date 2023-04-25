@@ -10,11 +10,11 @@ public class ControlBullet : MonoBehaviour
 	public float floatInfrontOfWall;
 	public GameObject bloodEffect;
 	public LayerMask ignoreLayer;
-	private EnemyAi enemy;
+	private EnemyAi[] enemy;
 
 	private void Start()
     {
-		enemy = GameObject.FindObjectOfType<EnemyAi>();
+		enemy = GameObject.FindObjectsOfType<EnemyAi>();
 	}
     void Update()
     {
@@ -24,7 +24,13 @@ public class ControlBullet : MonoBehaviour
 			{
 				Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 				Destroy(gameObject);
-				enemy.TakeDamage(1);
+				foreach (EnemyAi enemy in enemy)
+				{
+					if(enemy.gameObject == hit.collider.gameObject)
+					{
+						enemy.TakeDamage(1);
+					}
+				}
 			}
             if (hit.transform.tag == "LevelPart")
             {
