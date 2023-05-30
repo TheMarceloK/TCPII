@@ -2753,10 +2753,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 7882274441481039014, guid: 3dd7b887d2a8c4249af5d01f5a8498cb, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7882274441481039035, guid: 3dd7b887d2a8c4249af5d01f5a8498cb, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -6787,11 +6783,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3150508108460161036, guid: 592a5ab0ccef0054ab2a4290f0679d99, type: 3}
   m_PrefabInstance: {fileID: 1797612492}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1416600446 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7882274441481039008, guid: 3dd7b887d2a8c4249af5d01f5a8498cb, type: 3}
-  m_PrefabInstance: {fileID: 512768123}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1434376043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9097296164257881864, guid: 3352b559505ffca49ba51452b34672d9, type: 3}
@@ -10254,40 +10245,6 @@ PrefabInstance:
 --- !u!4 &2128815735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7882274441481039035, guid: 3dd7b887d2a8c4249af5d01f5a8498cb, type: 3}
-  m_PrefabInstance: {fileID: 512768123}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2128815736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416600446}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af2fb24ddcac2e459389fd358d2b6a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 2128815737}
-  player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 128
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 64
-  health: 5
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 3.5
-  timeBetweenAttacks: 1.5
-  projectile: {fileID: 2932220796076520847, guid: 7837f21e39983ec408ddf68756c15165, type: 3}
-  sightRange: 12
-  attackRange: 6
-  playerInSightRange: 0
-  playerInAttackRange: 0
---- !u!195 &2128815737 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 7882274441481039009, guid: 3dd7b887d2a8c4249af5d01f5a8498cb, type: 3}
   m_PrefabInstance: {fileID: 512768123}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &721977333443592105
