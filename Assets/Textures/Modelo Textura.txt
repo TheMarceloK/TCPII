@@ -1,0 +1,26 @@
+Site Usado: https://freepbr.com/
+
+Modelo de Colunas - gray-bricks1-bl4 / Coluna.AO
+
+Modelo de Poste - metal-slpotchy-bl e Lined-Cement-bl / Poste_Atlas_AO
+
+Modelo de Barreira - Lined-Cement-bl / Barreira_Mureta_AO
+
+Modelo dos Carros - Carro Quebrado: grimy-metal-bl - Carro_item02_AO / Carro: rusted-steel-bl - Carro_item01_AO
+
+Kit de primeiros socorros - Textura de cruz (vermelho e verde) misturada com material / cruz vermelha - KitDePrimeirosSocorros_item01_AO /
+cruz verde - KitDePrimeirosSocorros_item02_AO 
+
+Silenciador - metal-slpotchy-bl / Silenciador_AO
+
+Munição RPG - Material e metal-slpotchy-bl / RPG_AO
+
+Munição da Sniper - Material com Ferro Escovado / Sniper_AO
+
+Munição M16 - Material com Ferro Escovado / M16_AO
+
+Chão do Onibus - steelplate1-bl / Onibus_item01_AO
+
+Onibus - Onibus_item01_AO com imagem Onibus.jpg
+
+Caixa De Munição - Caixote.texture 
