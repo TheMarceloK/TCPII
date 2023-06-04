@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 383166101895587498}
   - component: {fileID: 6081454452605082490}
   - component: {fileID: 6253391787163506811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Carro
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

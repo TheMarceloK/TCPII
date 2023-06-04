@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6026979504608143694}
   - component: {fileID: 8908248186583338241}
   - component: {fileID: 8592688114771175279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Poste06
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5037607062046650052}
   - component: {fileID: 8234541080595734881}
   - component: {fileID: 6170494654590866859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mureta 1
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

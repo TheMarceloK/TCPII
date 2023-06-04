@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1652707488587916704}
   - component: {fileID: 1208957122133529069}
   - component: {fileID: 6099664978697108111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CarroQuebrado
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

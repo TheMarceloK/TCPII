@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4015229840752120142}
   - component: {fileID: 1641288432744023718}
   - component: {fileID: 7269758799647268704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Onibus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7604995235837924306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ONIBUS
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,9 +128,9 @@ GameObject:
   - component: {fileID: 5613892730884838022}
   - component: {fileID: 2113296217290763562}
   - component: {fileID: 4722823685626848197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roda
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

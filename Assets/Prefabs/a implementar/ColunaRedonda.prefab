@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2705322798684346600}
   - component: {fileID: 5878376776283890869}
   - component: {fileID: 7614120109816183648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ColunaRedonda
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7054032750540098871}
   - component: {fileID: 5070019121437731520}
   - component: {fileID: 776291951414133315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arco
-  m_TagString: Untagged
+  m_TagString: LevelPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
