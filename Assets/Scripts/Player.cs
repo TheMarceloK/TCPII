@@ -29,6 +29,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private GameObject bulletSpawnPlace;
 
+    public AudioClip AudioShoot;
+    [SerializeField]
+    private AudioSource AudioAll;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -49,6 +53,7 @@ public class Player : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
+                    AudioAll.PlayOneShot(AudioShoot);
                     Bullets--;
                 }
             }

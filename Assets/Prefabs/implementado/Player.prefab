@@ -331,6 +331,7 @@ MonoBehaviour:
   textTrade: {fileID: 0}
   bullet: {fileID: 7346288100154261617, guid: 6fdc6835d1c665341867c02831aa7438, type: 3}
   bulletSpawnPlace: {fileID: 721977334131634423}
+  AudioShoot: {fileID: 8300000, guid: 736a6ee94d8a94aef925851d18125a0c, type: 3}
   state: 0
 --- !u!136 &721977334251759477
 CapsuleCollider:
