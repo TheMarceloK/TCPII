@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3d27a5c0d9a986d4e991cba50ccab873, type: 2}
     - target: {fileID: 6215797575597860365, guid: 4f403c4e95737ec469b14d9cfe1c8b75, type: 3}
       propertyPath: m_Name
-      value: CarroQuebrado (1)
+      value: CarroQuebrado (1) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f403c4e95737ec469b14d9cfe1c8b75, type: 3}

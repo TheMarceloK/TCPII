@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5828865592501539935}
   - component: {fileID: 8292523917459616578}
   - component: {fileID: 4566765348290710062}
+  - component: {fileID: 7861009056970221313}
   m_Layer: 0
   m_Name: KitMedico
   m_TagString: Heal
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3285658699151356983}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 200, y: 200, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7861009056970221313
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3285658699151356983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4607826929150079846, guid: 8c313b69329897544868504b8678d325, type: 3}

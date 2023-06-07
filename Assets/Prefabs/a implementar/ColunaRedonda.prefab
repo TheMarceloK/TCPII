@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2705322798684346600}
   - component: {fileID: 5878376776283890869}
   - component: {fileID: 7614120109816183648}
+  - component: {fileID: -3312455841403388143}
   m_Layer: 8
   m_Name: ColunaRedonda
   m_TagString: LevelPart
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3312455841403388143
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156603823425245865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -956408214876673620, guid: 1be255f7303153f41ac32325afe6718d, type: 3}

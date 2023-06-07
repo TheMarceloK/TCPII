@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2265077959497027922}
   - component: {fileID: 8886729986327859902}
   - component: {fileID: 269471679701335612}
+  - component: {fileID: 2359321632861505291}
   m_Layer: 8
   m_Name: Poste12
   m_TagString: LevelPart
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2359321632861505291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989155111671414187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8493279596684323934, guid: 9b9fe0e8b952cfa47a0049ddcaa8690c, type: 3}

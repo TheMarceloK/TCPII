@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1731234468368837269}
   - component: {fileID: 3516501751165381727}
   - component: {fileID: 1644600341683859656}
+  - component: {fileID: 2079293450229438103}
   m_Layer: 0
   m_Name: Lanca-Granada.Gatilho
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2079293450229438103
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403429315315397448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3094064430145391649, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &3977180060613573240
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 6066341124322352112}
   - component: {fileID: 2387342974594691807}
   - component: {fileID: 7430506032106318915}
+  - component: {fileID: 3195660064920831016}
   m_Layer: 0
   m_Name: Lanca-Granada.CAno
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3195660064920831016
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3977180060613573240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9023808783340782192, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &4100637167568753323
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3721014991546173457}
+  - component: {fileID: 7626159822203355277}
   m_Layer: 0
   m_Name: "Lan\xE7a_Granada_Final"
   m_TagString: Gun
@@ -204,6 +235,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7626159822203355277
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100637167568753323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4222653144669170183
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +260,7 @@ GameObject:
   - component: {fileID: 3721626890612781737}
   - component: {fileID: 8965804068502828972}
   - component: {fileID: 2106963311264291636}
+  - component: {fileID: 1309450610750946008}
   m_Layer: 0
   m_Name: Municao.Frente
   m_TagString: Untagged
@@ -287,6 +333,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1309450610750946008
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4222653144669170183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8949506128815143722, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &5164075572044639455
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +358,7 @@ GameObject:
   - component: {fileID: 1660797536739219997}
   - component: {fileID: 4513912456603920103}
   - component: {fileID: 2101337645548706980}
+  - component: {fileID: 3869607992055496865}
   m_Layer: 0
   m_Name: Lanca-Granada.CanoR
   m_TagString: Untagged
@@ -370,6 +431,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3869607992055496865
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164075572044639455}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1277957237737588657, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &7236416366915989231
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +456,7 @@ GameObject:
   - component: {fileID: 1452219106455868071}
   - component: {fileID: 7394259542777626224}
   - component: {fileID: 3632488609985956656}
+  - component: {fileID: 8466084315227355858}
   m_Layer: 0
   m_Name: Municao
   m_TagString: Untagged
@@ -453,6 +529,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8466084315227355858
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236416366915989231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1326388948652245620, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &8029400287095547376
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +554,7 @@ GameObject:
   - component: {fileID: 6948393749832926309}
   - component: {fileID: 4542753973530429442}
   - component: {fileID: 4694086584946202416}
+  - component: {fileID: 2366819307546004218}
   m_Layer: 0
   m_Name: Lanca-Granada.Base
   m_TagString: Untagged
@@ -536,6 +627,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2366819307546004218
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029400287095547376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7881396937906420957, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
 --- !u!1 &8870306120220721315
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +652,7 @@ GameObject:
   - component: {fileID: 862855781445356658}
   - component: {fileID: 1219941071619924131}
   - component: {fileID: 8057656593353633220}
+  - component: {fileID: 3803910944293027107}
   m_Layer: 0
   m_Name: Lanca-Granada.Apoio
   m_TagString: Untagged
@@ -619,3 +725,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3803910944293027107
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8870306120220721315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7090741366542963715, guid: 4a85a200b9f82ad4194f8b0ef75768ce, type: 3}
