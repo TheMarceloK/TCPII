@@ -12,18 +12,23 @@ public class ControlUICanvas : MonoBehaviour
     [SerializeField]
     private Slider life;
     [SerializeField]
-    private GameObject UIPause, UIOptions, UIButtons;    
+    private Slider ammo;
+    [SerializeField]
+    private GameObject UIPause, UIOptions, UIButtons, UIHud;    
     void Start()
     {
         player = FindObjectOfType<Player>();
         life.maxValue = 100;
+        UIHud.SetActive(true);
     }
 
     void Update()
     {
         text.text = player.Bullets + "/" + player.defaultBullets;
+        ammo.maxValue = player.defaultBullets;
+        ammo.value = player.Bullets;
 
-        if(player.Bullets == 0)
+        if (player.Bullets == 0)
         {
             textWarning.SetActive(true);
         }
@@ -37,6 +42,7 @@ public class ControlUICanvas : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
             UIPause.SetActive(true);
+            UIHud.SetActive(false);
             Time.timeScale = 0;
         }
     }
@@ -45,6 +51,7 @@ public class ControlUICanvas : MonoBehaviour
     {
         Time.timeScale = 1;
         UIPause.SetActive(false);
+        UIHud.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
