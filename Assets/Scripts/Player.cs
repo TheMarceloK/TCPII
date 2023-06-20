@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        startYScale= transform.localScale.y;
+        startYScale = transform.localScale.y;
         defaultBullets = Bullets;
     }
 
@@ -46,28 +46,38 @@ public class Player : MonoBehaviour
         float eixoZ = Input.GetAxis("Vertical");
 
         movement = transform.TransformVector(new Vector3(eixoX, 0, eixoZ));
-        if(Time.timeScale == 1)
+        if (Time.timeScale == 1)
         {
-            if(Bullets > 0)
+            if (Bullets > 0)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (!GunAnim.recarregando)
                 {
-                    Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
-                    AudioAll.PlayOneShot(AudioShoot);
-                    Bullets--;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+
+                        Instantiate(bullet, bulletSpawnPlace.transform.position, bulletSpawnPlace.transform.rotation);
+                        AudioAll.PlayOneShot(AudioShoot);
+
+                        Bullets--;
+                        Animation(AnimState.Shooting);
+                    }
                 }
             }
         }
-       
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (!GunAnim.recarregando)
         {
-            Bullets = defaultBullets;
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+
+                Bullets = defaultBullets;
+                Animation(AnimState.Reloading);
+            }
         }
         if (Input.GetKeyDown(crouchkey))
         {
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rigidbody.AddForce(Vector3.down*5f,ForceMode.Impulse);
+            rigidbody.AddForce(Vector3.down * 5f, ForceMode.Impulse);
         }
         if (Input.GetKeyUp(crouchkey))
         {
@@ -76,7 +86,7 @@ public class Player : MonoBehaviour
         }
         StateHandler();
     }
-    
+
     private void FixedUpdate()
     {
         rigidbody.MovePosition(rigidbody.position + (movement * speed * Time.fixedDeltaTime));
@@ -95,10 +105,12 @@ public class Player : MonoBehaviour
             state = MovementState.running;
             speed = runningspeed;
         }
-        else { state = MovementState.walking;
+        else
+        {
+            state = MovementState.walking;
             speed = walkspeed;
         }
-        
+
         if (Input.GetKey(crouchkey))
         {
             state = MovementState.crounching;
@@ -132,13 +144,46 @@ public class Player : MonoBehaviour
             }
             if (other.gameObject.tag == "Ammo")
             {
-                
+
                 Destroy(other.gameObject);
                 textTrade.SetActive(false);
             }
 
         }
     }
+
+
+    [SerializeField]
+    private List<Animator> handsAnimator;
+    public void Animation(AnimState state)
+    {
+        Debug.Log(state);
+        if (state == AnimState.Shooting)
+        {
+            handsAnimator[0].SetTrigger("atirando");
+            handsAnimator[1].SetTrigger("atirando");
+            Debug.Log("atirou");
+            Debug.Log(state);
+
+        }
+
+        if (state == AnimState.Reloading)
+        {
+            handsAnimator[0].SetTrigger("recarregando");
+            handsAnimator[1].SetTrigger("recarregando");
+
+            Debug.Log("recarregou");
+            Debug.Log(state);
+        }
+    }
+    public enum AnimState
+    {
+        Idle,
+        Shooting,
+        Reloading
+
+    }
+
 
     private void OnTriggerExit(Collider other)
     {
