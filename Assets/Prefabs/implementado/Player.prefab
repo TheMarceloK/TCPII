@@ -630,7 +630,9 @@ MonoBehaviour:
   AudioShoot: {fileID: 8300000, guid: 736a6ee94d8a94aef925851d18125a0c, type: 3}
   AudioAll: {fileID: 634715087}
   state: 0
-  handsAnimator: []
+  handsAnimator:
+  - {fileID: 8493799225322016324}
+  - {fileID: 8493799225322016324}
 --- !u!136 &721977334251759477
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -682,7 +684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 184566988538005847, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14600004
+      value: 0.146
       objectReference: {fileID: 0}
     - target: {fileID: 184566988538005847, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
       propertyPath: m_LocalPosition.y
@@ -690,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 184566988538005847, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2169999
+      value: -0.303
       objectReference: {fileID: 0}
     - target: {fileID: 184566988538005847, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
       propertyPath: m_LocalRotation.w
@@ -729,5 +731,10 @@ PrefabInstance:
 --- !u!4 &2522057230106448958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 184566988538005847, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
+  m_PrefabInstance: {fileID: 2418313164046277993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8493799225322016324 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6084251385425007405, guid: 9305567bab73a4d4cab5d5551f69f758, type: 3}
   m_PrefabInstance: {fileID: 2418313164046277993}
   m_PrefabAsset: {fileID: 0}
