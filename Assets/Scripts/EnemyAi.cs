@@ -19,7 +19,7 @@ public class EnemyAi : MonoBehaviour
 
     //Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    bool alreadyAttacked, dead;
     public GameObject projectile;
 
     //States
@@ -34,13 +34,17 @@ public class EnemyAi : MonoBehaviour
 
     private void Update()
     {
-        //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (!dead)
+        {
+            //Check for sight and attack range
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        }
     }
 
     private void Patroling()
@@ -99,7 +103,10 @@ public class EnemyAi : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0) DestroyEnemy();
+        Animation(AnimState.hurt);
+
+        if (health <= 0) { Animation(AnimState.dead); dead = true; }
+
     }
     private void DestroyEnemy()
     {
@@ -112,5 +119,21 @@ public class EnemyAi : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public Animator animator;
+
+    public void Animation(AnimState state)
+    {
+
+        if (state == AnimState.hurt) animator.SetTrigger("hurt");
+
+        if (state == AnimState.dead) animator.SetTrigger("dead");
+    }
+    public enum AnimState
+    {
+
+        hurt,
+        dead
     }
 }

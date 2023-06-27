@@ -3574,6 +3574,7 @@ GameObject:
   - component: {fileID: 7882274441481039015}
   - component: {fileID: 7882274441481039014}
   - component: {fileID: 7882274441481039009}
+  - component: {fileID: 8349382282467393734}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Dummie
@@ -3725,6 +3726,27 @@ NavMeshAgent:
   m_BaseOffset: 0.91
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &8349382282467393734
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882274441481039008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e3ea04fd3670f384aa83cd1ff6f5fb29, type: 3}
+  m_Controller: {fileID: 9100000, guid: aa4a99a6260ab2342a434d55a8be4684, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7882274441762733857
 GameObject:
   m_ObjectHideFlags: 0
